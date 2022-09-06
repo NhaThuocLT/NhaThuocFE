@@ -2,42 +2,69 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Nhà thuốc LTDrugs">
+    <meta name="author" content="mansys">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <title></title>
 
-    <title>Đăng nhập</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <!-- CSS File -->
-    <link rel="stylesheet" href="../css/login.css">
-
-</head>
-<body>
-
-    <div class="warp_login">
-        <div class="login">
-            <h1 class="text-center text-secondary">Đăng nhập</h2>
-            <form class="needs-validation">
-                <div class="form-group was-validated">
-                    <label class="form-label" for="email">Tài khoản</label>
-                    <input class="form-control" type="email" id="email" required>
-                    <!-- <div class="invalid-feedback">
-                       
-                    </div> -->
+    <body class="login animate__animated animate__backInDown">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-12 text-center text-md-start" style="font-size:  50px ; margin: 20px;">
+                    <a style="font-weight:bold">NHÀ THUỐC LTDRUGS</a>
                 </div>
-                <div class="form-group was-validated">
-                    <label class="form-label" for="password">Mật khẩu</label>
-                    <input class="form-control" type="password" id="password" required>
+                <div class="col-md-5">
+                    <div class="card mb-5">
+                        <div class="card-body p-5">
+                            <div class="col-md-12">
+                                <h3 class="font-weight-bolder text-dark">Đăng nhập</h3>
+                                <p>Vui lòng nhập tài khoản đăng nhập . Nếu bạn không có vui lòng liên hệ với quản trị viên.</p>
+                            </div>
+                            <form method="POST" class="needs-validation login-form">
+                                <div class="col-md-12 mb-4">
+                                    <label for="account" class="form-label">Tài khoản</label>
+                                    <input type="text" class="form-control p-3" id="account" name="account" value="" required="">
+                                    <div class="invalid-feedback">
+                                        Vui lòng nhập tại khoản
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <label for="password" class="form-label">Mật khẩu</label>
+                                    <input type="password" class="form-control p-3" id="password" name="password" value="" required="">
+                                    <div class="invalid-feedback">
+                                        Vui lòng nhập mật khẩu
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="remember" value="1" id="remember">
+                                        <label class="form-check-label" for="remember">
+                     Ghi nhớ tài khoản                    </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button class="btn btn-warning login-submit w-100" type="submit">Đăng nhập</button>
+                                    <input type="hidden" name="token" value="426087626194943224174197445488129027667459042705905026952702485261820705403716407250120205058291910845094485388232286851695647958491543363792775735842350132850306037865438201966903813812855560292917690386209344648647801670882328087910652939448863338021511"
+                                        autocomplete="off">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <a href="#" style="float:right; font-size: 16px; text-decoration: none; color: black;">Quên mật khẩu?</a>
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault" style="float: left; font-size: 16px; color: black;">
-                        Nhớ mật khẩu
-                      </label>
+                <div class="col-md-7">
+                    <img src="https://pfn.vn/sites/default/files/anh_bai_viet/nh-thuoc-thai-duong.jpg" class="w-100">
                 </div>
-                <input class="btn btn-warning w-100" type="submit" value="Đăng nhập">
-            </form>
+
+            </div>
         </div>
-    </div>
-</body>
+        <script src="/templates/backend/assets/js/jquery-3.6.0.min.js"></script>
+        <script src="/templates/backend/assets/js/bootstrap.bundle.min.js"></script>
+        <script src="/templates/backend/assets/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+        <script src="/templates/backend/assets/js/login.js"></script>
+
+    </body>
+
 </html>

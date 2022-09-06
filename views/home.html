@@ -16,9 +16,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/custom.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-
 </head>
-
 <body>
     <div class="wrapper">
         <div class="body-overplay">
@@ -60,9 +58,20 @@
                         </li>
                         <li class="d-lg-none d-md-block d-xl-none d-sm-block">
                             <a href="#"><i class="material-icons">person</i><span>apps</span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">Tài khoản</a> 
+                                </li>
+                                <li>
+                                    <a href="">Đổi mật khẩu</a> 
+                                </li>
+                                <li>
+                                    <a href="">Đăng xuất</a> 
+                                </li>
+                            </ul>
                         </li>
                         <li class="d-lg-none d-md-block d-xl-none d-sm-block">
-                            <a href="#"><i class="material-icons">setting</i><span>apps</span></a>
+                            <a href="#" onclick="switchMode()"><i class="material-icons">setting</i><span>apps</span></a>
                         </li>
                     </div>
                     <hr style="border: none; height: 1px; color: #333; background-color: #333;">  
@@ -71,6 +80,12 @@
                             <i class="material-icons">receipt</i><span>Hóa đơn thuốc</span>
                         </a>
                         <ul class="collapse list-unstyled menu" id="pageSubmenu2">
+                            <li>
+                                <a href="./prescrip_list.html">Danh sách toa thuốc</a>
+                            </li>
+                            <li>
+                                <a href="./prescription.html">Toa thuốc</a>
+                            </li>
                             <li>
                                 <a href="./order.html">Hóa đơn đã thanh toán</a>
                             </li>
@@ -88,10 +103,10 @@
                                 <a href="./warehouse.html">Kho thuốc</a>
                             </li>
                             <li>
-                                <a href="#">Nhập hàng</a>
+                                <a href="./import.html">Nhập hàng</a>
                             </li>
                             <li>
-                                <a href="#">Loại thuốc</a>
+                                <a href="./categorys.html">Loại thuốc</a>
                             </li>
                         </ul>
                     </li>
@@ -116,7 +131,7 @@
                             <i class="material-icons">inventory</i><span>Mua hàng<ng>  </ng></span></a>
                         <ul class="collapse list-unstyled menu" id="pageSubmenu5">
                             <li>
-                                <a href="#">Nhà cung cấp</a>
+                                <a href="./supplier.html">Nhà cung cấp</a>
                             </li>
                             <li>
                                 <a href="#">Loại thuốc cung cấp</a>
@@ -142,9 +157,6 @@
                         <ul class="collapse list-unstyled menu" id="pageSubmenu7">
                             <li>
                                 <a href="#">Tài khoản</a>
-                            </li>
-                            <li>
-                                <a href="#">Nhóm quyền</a>
                             </li>
                         </ul>
                     </li>
@@ -195,9 +207,20 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">
+                                        <a class="nav-link" href="#" data-toggle="dropdown">
                                             <span class="material-icons">person</span>
                                         </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="">Tài khoản</a> 
+                                            </li>
+                                            <li>
+                                                <a href="">Đổi mật khẩu</a> 
+                                            </li>
+                                            <li>
+                                                <a href="">Đăng xuất</a> 
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">
@@ -491,6 +514,8 @@
                         });
                     })
                 </script>
+
+            
 </body>
 
 
