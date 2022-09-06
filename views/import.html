@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Thuốc LTDrugs</title>
+    <LINK REL="SHORTCUT ICON" HREF="../img/img.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--google material icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap v5.1.3 CDNs -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/import.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="body-overplay">
+            <!-- SideBar -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3><img src="https://img.freepik.com/premium-vector/drug-store-medicine-logo-with-capsule-pill-illustration_337180-357.jpg?w=2000" alt="logo" class="img-fluid">
+                        <span>LTDrugs</span>
+                    </h3>
+                </div>
+                <ul class="list-unstyled components" id="ul-hover">
+                    <li class="active" id="li-hover">
+                        <a href="./home.html" class="dashboard">
+                            <i class="material-icons">dashboard</i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <div class="small-screen navbar-display">
+                        <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
+                            <a href="#" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                <i class="material-icons">notifications</i>
+                                <span>4 notification</span>
+                            </a>
+                            <ul class="collapse list-unstyled menu" id="homeSubmenu">
+                                <li>
+                                    <a href="#">Bạn có 5 thông báo</a>
+                                </li>
+                                <li>
+                                    <a href="#">Đơn hàng đã được xuất</a>
+                                </li>
+                                <li>
+                                    <a href="#">Đã thêm hóa đơn mới</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+                            <a href="#"><i class="material-icons">apps</i><span>apps</span></a>
+                        </li>
+                        <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+                            <a href="#"><i class="material-icons">person</i><span>apps</span></a>
+                        </li>
+                        <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+                            <a href="#"><i class="material-icons">setting</i><span>apps</span></a>
+                        </li>
+                    </div>
+                    <hr style="border: none; height: 1px; color: #333; background-color: #333;">
+                    <li class="dropdown">
+                        <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="material-icons">receipt</i><span>Hóa đơn thuốc</span>
+                        </a>
+                        <ul class="collapse list-unstyled menu" id="pageSubmenu2">
+
+                            <li>
+                                <a href="./prescrip_list.html">Danh sách toa thuốc</a>     
+                            </li>
+                            <li>
+                                <a href="./prescription.html">Toa thuốc</a>
+                            </li>
+                            <li>
+                                <a href="./order.html">Hóa đơn đã thanh toán</a>
+                            </li>
+                            <li>
+                                <a href="./unpaid_order.html">Hóa đơn chưa thanh toán</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="material-icons">warehouse</i>
+                            <span>Kho hàng</span></a>
+                        <ul class="collapse list-unstyled menu" id="pageSubmenu3">
+                            <li>
+                                <a href="./warehouse.html">Kho thuốc</a>
+                            </li>
+                            <li>
+                                <a href="./import.html">Nhập hàng</a>
+                            </li>
+                            <li>
+                                <a href="./categorys.html">Loại thuốc</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="material-icons">equalizer</i>
+                            <span>Báo cáo</span></a>
+                        <ul class="collapse list-unstyled menu" id="pageSubmenu4">
+                            <li>
+                                <a href="./reports.html">Doanh thu</a>
+                            </li>
+                            <li>
+                                <a href="./purchases.html">Chi phí và công nợ</a>
+                            </li>
+                            <li>
+                                <a href="#">Thống kê</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="material-icons">inventory</i><span>Mua hàng<ng> </ng></span></a>
+                        <ul class="collapse list-unstyled menu" id="pageSubmenu5">
+                            <li>
+                                <a href="./supplier.html">Nhà cung cấp</a>
+                            </li>
+                            <li>
+                                <a href="#">Loại thuốc cung cấp</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="material-icons">group</i><span>Khách hàng</span></a>
+                        <ul class="collapse list-unstyled menu" id="pageSubmenu6">
+                            <li>
+                                <a href="#">Khách hàng</a>
+                            </li>
+                            <li>
+                                <a href="#">Lịch sử mua hàng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <hr style="border: none; height: 1px; color: #333; background-color: #333;">
+                    <li class="dropdown">
+                        <a href="#pageSubmenu7" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="material-icons">account_box</i><span>Người dùng</span></a>
+                        <ul class="collapse list-unstyled menu" id="pageSubmenu7">
+                            <li>
+                                <a href="./account.html">Tài khoản</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content-->
+            <div id="content">
+                <div class="top-navbar">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-mone d-none">
+                                <span class="material-icons">arrow_back_ios</span>
+                            </button>
+                            <a href="#" class="navbar-brand">Nhập Hàng</a>
+                            <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                            <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none" id="navbarSupportedContent">
+                                <ul class="nav navbar-nav ml-auto">
+                                    <li class="dropdown nav-item">
+                                        <a href="#" class="nav-link" data-toggle="dropdown">
+                                            <span class="material-icons">notifications</span>
+                                            <span class="notification">4</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#">You have 5 new messages</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">You're now friend with Mike</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Wish Mary on her birthday!</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">5 warnings in Server Console</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="material-icons">apps</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="material-icons">person</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="">Tài khoản</a> 
+                                            </li>
+                                            <li>
+                                                <a href="">Đổi mật khẩu</a> 
+                                            </li>
+                                            <li>
+                                                <a href="">Đăng xuất</a> 
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="material-icons">settings</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+                <div class="main-content">
+                    <div class="card card-custom">
+                        <div class="cardd-body">
+                            <div class="row pjax-content-load">
+                                <div class="col-lg-12">
+                                    <div class="card card-custom">
+
+                                        <div class="card-body">
+                                            <form method="POST" autocomplete="off" enctype="multipart/form-data" class="ajax-form">
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="mb-3">
+                                                                <label class="col-form-label">Loại nhập hàng <span class="text-danger">*</span></label>
+                                                                <select name="type" class="form-control select2 orders-change-update select2-hidden-accessible" style="width: 100%;" data-url="/warehouses/warehouses-update/import/type/" data-select2-id="select2-data-236-iuyb" tabindex="-1" aria-hidden="true">
+                                                                     <option value="1">Nhập thuốc</option>
+                                                                     <option value="2">Nhập vật tư y tế</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label>Mã thuốc</label>
+                                                                <input placeholder="Mã thuốc" type="text" name="code" value="" class="form-control">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label>Tên <small class="text-danger">*</small></label>
+                                                                <input placeholder="Tên" type="text" name="name" value="" class="form-control">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label>Nhà cung cấp <small class="text-danger">*</small></label>
+                                                                <select name="vendor" class="select2 form-control select2-hidden-accessible" style="width:100%" data-select2-id="select2-data-523-t79b" tabindex="-1" aria-hidden="true">
+                                                                  <option value="" disabled="" selected="" data-select2-id="select2-data-525-3kgm">Nhà cung cấp</option>
+                                                                                                <option value="1">Vin Phar</option>
+                                                                                                <option value="2">Pharmaci Co</option>
+                                                                                                <option value="3">Eco Hing</option>
+                                                                                                <option value="5">Cửa hàng tuyết Hồng</option>
+                                                                                                <option value="6">Công ty O.T.E.C</option>
+                                                                                                <option value="7">Công ty OLac</option>
+                                                                                                <option value="8">Vĩnh Phát</option>
+                                                                                          </select>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label>Số lượng</label>
+                                                                <input placeholder="Số lượng" type="text" name="price" value="" class="form-control number">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label>Đơn vị <small class="text-danger">*</small></label>
+                                                                <select name="units" class="select2 form-control select2-hidden-accessible" style="width:100%" data-select2-id="select2-data-529-j7ue" tabindex="-1" aria-hidden="true">
+                                                                    <option value="1">Viên</option>
+                                                                    <option value="2">Vỉ</option>
+                                                                    <option value="3">Lọ</option>
+                                                                    <option value="4">Hộp</option>
+                                                                    <option value="5">Cái</option>
+                                                                                          </select>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label>Giá mua </label>
+                                                                <input placeholder="Giá mua" type="text" name="price" value="" class="form-control number">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label>Giá bán</label>
+                                                                <input placeholder="Giá bán" type="text" name="price" value="" class="form-control number">
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="mb-3">
+                                                                <label class="col-form-label">Ngày <span class="text-danger">*</span></label>
+                                                                <input type="date" name="date" class="form-control orders-blur-update" data-load="false" data-url="/warehouses/warehouses-update/import/date/" value="2022-08-15">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label>Ghi chú</label>
+                                                                <textarea name="notes" class="form-control" placeholder="Ghi chú" style="height: 180px;"></textarea>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label>Hình đại diện</label>
+                                                                <input type="file" class="form-control" name="images">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <input type="hidden" name="token" value="037523605315975338651602020370914664448147934206167063626404608564368083945616783710013730035684986582088895708457863899918232607090413787865623764626046236762605131867082502659767605678182991855477993379162050718132607182458414604459223669459073979866760">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                                                    <button type="submit" class="btn btn-primary ajax-submit">
+                                                      <div class="spinner-button" style="display: none">
+                                                          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                          <span class="me-1">Đang tải.....</span>
+                                                      </div>
+                                                      <span class="name-button">Hoàn tất</span>
+                                                      
+                                                  </button>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <script src="../js/jquery-3.3.1.min.js"></script>
+                        <script src="../js/jquery-3.3.1.slim.min.js"></script>
+                        <script src="../js/bootstrap.min.js"></script>
+                        <script src="../js/popper.min.js"></script>
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                $("#sidebarCollapse").on('click', function() {
+                                    $('#sidebar').toggleClass('active');
+                                    $('#content').toggleClass('active');
+                                });
+                                $(".more-button, .body-overplay").on('click', function() {
+                                    $('#sidebar,.body-overplay').toggleClass('show-nav');
+                                });
+                            })
+                        </script>
+</body>
+
+
+</html>
